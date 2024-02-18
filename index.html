@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Obrador</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/icono_obrador.png" type="image/x-icon">
+    <!-- importar libreria para icono com texto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="img//logoObradorfondogris.jpg" alt="Logo principal del obrador" width="195" height="125" ">    
+            <form class="buscar_producto" action="/buscar" method="get">
+                <input type="search" id="busqueda" name="q" placeholder="buscar">
+                <button class="boton_busqueda" type="submit"  >🔍</button>
+            </form>
+        </div>
+
+        <div>
+            <nav class="barra_menu" >
+                <ul>
+                    <li><a href="./index.html">Home</a>  </li>
+                    <li><a href="./template/productos.html">Productos</a>  </li>
+                    <li><a href="./template/recetas.html">Recetas</a>  </li>
+                    <li><a href="./template/contacto.html">Contacto</a>  </li>
+                    <li><a href="./template/about.html">About</a>  </li>
+                </ul>
+            </nav>
+        </div> 
+
+    </header>
+    <main>
+        <div class="banner">
+            <img src="./img/banner/duo_panes_semi.jpg" alt="duo panes semillas">
+            <img src="./img/banner/lasana_frente.jpg" alt="lasaña frente">
+            <img src="./img/banner/tartas_en_gabill.jpg" alt="tartas_en_gabill">
+        </div>
+    </main>
+    
+    <section class="productos">
+        <div class="img_categorias">
+            <img src="./img/categias/alfajore_maizena.jpg" alt="alfajores_maizena">
+            <img src="./img/categias/pan_dulce.jpg" alt="pan_dulce">
+            <img src="./img/categias/tarta_en_lata.jpg" alt="tarta_en_lata">
+            <br>
+            <h3> Alfajores</h3>
+            <h3> Pan Dulces</h3>
+            <h3> Tartas saladas</h3>
+        </div>
+    </section>
+        <section class="recetas">
+        <h2> Recetas</h2>
+        <img src="./img/pan_dulce_a_largo.jpg" alt="Pan dulce alto">
+        <img src="./img/pan_d_lado.jpg" alt="pan de semillas">
+        <img src="./img/pasta_p_rellenar.jpg" alt="pasta rellena en molde">
+        <br>
+        <br>
+        <h3> Dulces</h3>
+        <h3> Saladas</h3>
+        <h3> Pasta rellena </h3>
+    </section>
+   
+
+
+
+<footer>
+    <p>Todos los derechos de copyright</p>
+    <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+
+    
+</body>
+</html>

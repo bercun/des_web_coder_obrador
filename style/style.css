@@ -1,0 +1,380 @@
+
+/* font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Open+Sans:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fira Sans;
+}
+
+
+/* var para el css */
+:root{
+    --color_fondo : #F2F2F2;
+    --color_fondo_sec:#D9D9D9;
+    --color_texto_resalta:#F20505;
+    --color_texto_sec : hsla(355, 73%, 32%, 0.7);
+    --color_texto: black;
+}
+
+/* encabezado fijo con logo menu y buesqueda */
+
+header{
+    height: 170px;
+    width: 100%;
+    background: var(--color_fondo_sec);
+}
+/* imput y boton de busqueda */
+.buscar_producto{
+    
+    float:right; /*alinea a la derecha */
+    margin-top: 90px; 
+    margin-left:30px;
+    
+    ;
+}   
+
+#busqueda {
+    border: 4px solid var(--color_texto_resalta);
+    border-radius: 25px;
+    padding-left: 15px;
+    
+}
+
+.boton_busqueda{
+    border: 4px solid var(--color_texto_resalta);
+    border-radius: 3px;
+}
+/* empieza el barra de menu */
+.barra_menu{
+    float: right;
+    
+}
+
+.barra_menu a:hover{
+    color:var(--color_texto_sec)
+}
+
+.barra_menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.barra_menu a  {
+    background-color: var(--color_fondo_sec);
+    height:140px;
+    width: 100%;
+    padding: 5px;
+    color: var(--color_texto_resalta);
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration:none;
+    
+}
+
+section.nav{
+    margin-top: 60px;
+}
+ .about{
+
+    background-image: url("../img/icono_obrador.png");
+    ;
+ }
+
+
+
+ div h1{
+    color: var(--color_texto_resalta);
+    height: 80px;
+    width: 250px;
+    padding: 15px;
+    margin-left: 50%;
+    font-size: 80px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+div h2{
+    margin-left: 80px;
+    font-size: 50px;
+    color: var(--color_texto_sec);
+    margin-bottom: 60px;
+}
+
+div p{ 
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 20px;
+    display: inline-block;
+    color: black;
+    height:750x;
+    width: 800px; 
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 35%;
+    word-spacing: 8px;
+    font-size:large;
+    background-color: var(--color_fondo_sec);
+}
+
+
+#info_contacto p {
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 20px;
+    display: inline-block;
+    color: black;
+    height:350px;
+    width: 800px; 
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 35%;
+    word-spacing: 8px;
+    font-size:large;
+
+
+}
+
+
+
+
+.barra_navegacion a:hover{
+    color: var(--color_texto_sec);
+
+}
+
+.barra_navegacion ul li a{
+
+    margin-left: 25px;
+    margin: 15px;
+    padding-top: 50px;
+    text-decoration: none;
+    color: var(--color_texto_resalta) ;  
+    font-size: larger; 
+    
+}
+
+/* banner */
+
+main {
+    margin-top: 20px;
+}
+.banner{
+    max-width: 420px;
+    width: 90%;
+    height:300px;
+    margin: 0 auto;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    border-end-end-radius: 9px solid var(--color_texto_sec);
+}
+
+.banner img {
+
+    width: 100%;
+    scroll-snap-align: center;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+/* productos categorias */
+
+.producto img{ 
+    margin-left: 0 auto;
+    height: 180px;
+    width: 6fr;
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.producto h2{
+    
+    color: #BF0A19; 
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.producto h3 {
+    color: black; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.producto h4 {
+    color: black; 
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.producto p{
+    
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 20px;
+    display: inline-block;
+    color: black;
+    height: 200px;
+    width: 450px; 
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 55px;
+}
+
+.producto .precio{
+    display: inline-block;
+    color: var(--color_texto)
+}
+
+.producto button {
+
+    margin-left: 450px;
+}
+
+.producto .boton {
+    color: var(--color_texto);
+    /* display:inline-block; */
+    margin-left: 0px;
+    height: 5%px;
+    width: 15;
+
+}
+
+
+
+.productos{
+    
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
+    
+}
+
+.productos .img_categorias img {
+
+    margin-left: 70px;
+    height: 180px;
+    width: 6fr;
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 15px;
+
+}
+
+
+
+.productos h3{
+    
+    color: #BF0A19; 
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: 210px;
+}
+
+.recetas{
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+}
+
+.recetas h2{
+    margin-left: 50%;
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: var(--color_texto_resalta)
+
+
+}
+
+.recetas img{
+    margin-left: 170px;
+    height: 220px;
+    width: 3fr;
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 15px;
+
+}
+.recetas h3{
+    
+    color: #BF0A19; 
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: 210px;
+}
+
+
+.recetas p{
+    border: 3px solid var(--color_texto_sec);
+    border-radius: 20px;
+    display: inline-block;
+    color: black;
+    height: 150px;
+    width: 450px; 
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-left: 55px;
+
+}
+#mapa {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#mapa .iframe-centrad {
+    width: 600px; /* Ancho del iframe */
+    height: 400px; /* Altura del iframe */
+    position: absolute; /* Posición absoluta para el iframe */
+    top: 50%; /* Alinea la parte superior del iframe al 50% del contenedor */
+    left: 50%; /* Alinea la parte izquierda del iframe al 50% del contenedor */
+    transform: translate(-50%, -50%); /* Centra el iframe */
+}
+
+
+.pie_de_pagina{
+
+    width: 100%;
+    height: 400px;
+}
+
+footer p{
+    text-align: center;
+    color: var(--color_texto_sec);
+    font-size: medium;
+}
+
+footer .redes {
+    background-color: var(--color_fondo_sec);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+footer .redes i {
+    color: var(--color_texto_resalta);
+    font-size: 50px;
+    letter-spacing: 30px;
+    font-weight: bold;
+
+}
+
+footer .redes a 
+{
+    text-decoration: none;
+
+}
